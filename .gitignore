@@ -1,0 +1,24 @@
+__pycache__
+utils.py
+Resources Dump.md
+nih-chest/*
+.ipynb_checkpoints
+
+# Binary data
+*.hdf5
+*.keras 
+
+# Large data files
+#*.data
+
+# Generated reports
+*.csv
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
