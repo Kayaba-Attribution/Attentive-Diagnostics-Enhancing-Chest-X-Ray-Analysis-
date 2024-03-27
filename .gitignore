@@ -7,6 +7,7 @@ nih-chest/*
 # Binary data
 *.hdf5
 *.keras 
+*.h5
 
 # Large data files
 #*.data
