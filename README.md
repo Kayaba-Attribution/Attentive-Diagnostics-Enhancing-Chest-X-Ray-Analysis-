@@ -34,6 +34,21 @@ This project utilizes extensive dataset of the NIH ChestX-ray14.
 ### Implementation
 The project consists of several phases, each dedicated to different facets of model development—from prototype models using basic CNN architectures to the sophisticated integration of ResNet-18 with Convolutional Block Attention Module (CBAM). Evaluation strategies are meticulously devised, prioritizing AUC-ROC, precision-recall curves, and F-1 scores.
 
+#### Supported Models:
+
+- The final model is located here: [Baseline Model Notebook](models/Baseline%20Final/Baseline.ipynb)
+- For an end-to-end data to model example, see: [ResNet-18 CBAM Notebook](models/Resnet-18-CBAM/Resnet-18-CBAM.ipynb)
+
+
+- Baseline 
+- Baseline Final
+- Mobile Net 
+- Resnet-18-CBAM
+- Resnet-18 Old
+- VGGNet19_transferLearning
+- VGG_SVM
+- VVGNet-16
+
 ### Results
 The implementation of CBAM has notably boosted model performance, as reflected by the enhanced AUC scores across different pathologies.
 
