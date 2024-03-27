@@ -36,8 +36,8 @@ The project consists of several phases, each dedicated to different facets of mo
 
 #### Supported Models:
 
-- The final model is located here: [Baseline Model Notebook](models/Baseline%20Final/Baseline.ipynb)
-- For an end-to-end data to model example, see: [ResNet-18 CBAM Notebook](models/Resnet-18-CBAM/Resnet-18-CBAM.ipynb)
+The final model is located here: [Baseline Model Notebook](models/Baseline%20Final/Baseline.ipynb)
+For an end-to-end data to model example, see: [ResNet-18 CBAM Notebook](models/Resnet-18-CBAM/Resnet-18-CBAM.ipynb)
 
 
 - Baseline 
@@ -51,6 +51,17 @@ The project consists of several phases, each dedicated to different facets of mo
 
 ### Results
 The implementation of CBAM has notably boosted model performance, as reflected by the enhanced AUC scores across different pathologies.
+
+![](Images/CBAM_results.png)
+The integration of attention mechanisms via CBAM with ResNet-18 leads to the most promising results. It not only improves the model's overall ability to differentiate between pathologies but also shows that focusing the model's attention on specific areas of an image can significantly enhance performance.
+
+#### predict_pathologies Function
+
+Pre-processes a specified image from a dataset, adjusts it for the model input, and then employs the model to predict the likelihood of each pathology.
+
+![](Images/predict..png)
+
+The model outputs probabilities that indicate its confidence in the presence of each condition in the image. Visually, the function presents both the image and the model's predictions side by side. It displays the image on the left with its true labels for reference. On the right, it features a horizontal bar chart that represents the model's predicted probabilities for each class label, allowing for an immediate visual assessment of the model's performance.
 
 ### How to Use
 1. Clone this repository.
